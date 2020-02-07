@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Myhabit' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Myhabit
+  pod 'GoogleSignIn', '~> 4.4.0'
+
+  target 'Myhabit-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+
+    pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+    pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+
+    pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  end
+
+  target 'MyhabitTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
